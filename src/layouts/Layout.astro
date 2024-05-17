@@ -1,0 +1,113 @@
+---
+import "@fontsource-variable/playfair-display";
+import "@fontsource-variable/open-sans";
+import Main from "../components/Main.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<!doctype html>
+<html lang="es" class="dark">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="description"
+            content="Soy Mathías, un desarrollador de software y estudiante en la Universidad Tecnológica Nacional (UTN). Te invito a conocer mi portafolio."
+        />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+        <meta name="generator" content={Astro.generator} />
+
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="Mathías Ezequiel Latrónico" />
+        <meta
+            name="keywords"
+            content="mathxlat, mathiezelat, mathias ezequiel latronico, desarrollador de software, portafolio, programacion, UTN"
+        />
+
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
+
+        <meta
+            property="og:title"
+            content="Portafolio de Mathías Ezequiel Latrónico | Desarrollador de Software"
+        />
+        <meta
+            property="og:description"
+            content="Soy Mathías, un desarrollador de software y estudiante en la Universidad Tecnológica Nacional (UTN). Te invito a conocer mi portafolio."
+        />
+        <meta
+            property="og:url"
+            content="https://mathxlat.github.io/portfolio/"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="./android-chrome-512x512.png" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="512" />
+        <meta property="og:image:height" content="512" />
+        <meta
+            property="og:image:alt"
+            content="Imagen de portafolio de mathxlat"
+        />
+        <meta property="og:site_name" content="mathxlat" />
+        <meta property="og:locale" content="es_LA" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="mathxlat.github.io" />
+        <meta
+            property="twitter:url"
+            content="https://mathxlat.github.io/portafolio/"
+        />
+        <meta
+            name="twitter:title"
+            content="Portafolio de Mathías Ezequiel Latrónico | Desarrollador de Software"
+        />
+        <meta
+            name="twitter:description"
+            content="Soy Mathías, un desarrollador de software y estudiante en la Universidad Tecnológica Nacional (UTN). Te invito a conocer mi portafolio."
+        />
+        <meta name="twitter:image" content="./android-chrome-512x512.png" />
+
+        <meta name="theme-color" content="#000" />
+
+        <title>
+            Portafolio de Mathías Ezequiel Latrónico | Desarrollador de Software
+        </title>
+    </head>
+    <body class="max-w-3xl m-auto px-4 dark:bg-black dark:text-white">
+        <Main>
+            <slot />
+        </Main>
+        <Footer />
+    </body>
+</html>
+
+<style is:global>
+    html {
+        font-family: "Open Sans Variable", sans-serif;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Playfair Display Variable", serif;
+    }
+</style>
