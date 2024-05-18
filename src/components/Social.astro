@@ -1,0 +1,21 @@
+---
+import SocialLink from "./SocialLink.astro";
+import Github from "./icons/Github.astro";
+import Gmail from "./icons/Gmail.astro";
+import Linkedin from "./icons/Linkedin.astro";
+---
+
+<div class="flex gap-2">
+    <SocialLink href="https://github.com/mathxlat" aria-label="GitHub">
+        <Github />
+    </SocialLink>
+    <SocialLink
+        href="https://www.linkedin.com/in/mathxlat/"
+        aria-label="LinkedIn"
+    >
+        <Linkedin />
+    </SocialLink>
+    <SocialLink href="mailto:mathiezelat@gmail.com" aria-label="Gmail">
+        <Gmail />
+    </SocialLink>
+</div>
