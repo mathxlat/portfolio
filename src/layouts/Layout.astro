@@ -56,7 +56,10 @@ import Footer from "../components/Footer.astro";
             content="https://mathxlat.github.io/portfolio/"
         />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="/portfolio/android-chrome-512x512.png" />
+        <meta
+            property="og:image"
+            content="/portfolio/android-chrome-512x512.png"
+        />
         <meta
             property="og:image:alt"
             content="Imagen de portafolio de mathxlat"
@@ -78,7 +81,10 @@ import Footer from "../components/Footer.astro";
             name="twitter:description"
             content="Soy Mathías, un desarrollador de software y estudiante en la Universidad Tecnológica Nacional (UTN). Te invito a conocer mi portafolio."
         />
-        <meta name="twitter:image" content="/portfolio/android-chrome-512x512.png" />
+        <meta
+            name="twitter:image"
+            content="/portfolio/android-chrome-512x512.png"
+        />
 
         <meta name="theme-color" content="#000" />
 
@@ -86,7 +92,9 @@ import Footer from "../components/Footer.astro";
             Portafolio de Mathías Ezequiel Latrónico | Desarrollador de Software
         </title>
     </head>
-    <body class="max-w-3xl m-auto px-4 dark:bg-black dark:text-white">
+    <body
+        class="max-w-3xl m-auto px-4 bg-primary-light text-primary-dark dark:bg-primary-dark dark:text-primary-light dark:[&_p]:text-secondary-light"
+    >
         <Main>
             <slot />
         </Main>

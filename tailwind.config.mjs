@@ -2,8 +2,19 @@
 export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
-		extend: {},
+		extend: {
+			colors: {
+				'primary': {
+					light: '#d3dbde',
+					dark: '#171a1c',
+				},
+				'secondary': {
+					light: '#a1a7aa',
+					dark: '#22282a'
+				}
+			}
+		},
 	},
 	plugins: [],
-	darkMode: "selector"
+	darkMode: 'selector'
 }
